@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #edefec;
+}
+.chat__header{
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+.chat__users{
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  flex-grow: 1;
+  background-color: aliceblue;
+  border-radius: 5px;
+  box-shadow: 0 3px 5px 2px rgba(0, 0, 0, .3);
+}
+.chat__container{
+  display: flex;
+  justify-content: end;
+}
+.input__chat__message{
+  border:none;
+  margin: 0;
+  border-radius: 5px;
+  box-shadow: 0 3px 5px 2px rgba(0, 0, 0, .3);
+  min-width: 98%;
+  height: 30px;
+}
+.chat__message__wrap{
+  width: 100%;
+  margin: 0;
+}
+.chat__window{
+  overflow-y: scroll;
+  padding: 0;
+  padding: 0px;
+  height: 200px;
+  flex-grow: 2;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.chat__window__wrap{
+  padding: 5px;
+  display: flex;
+  flex-grow: 2;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+  background-color: aliceblue;
+  border-radius: 5px;
+  box-shadow: 0 3px 5px 2px rgba(0, 0, 0, .3);
+  height: 100%;
+}
+.chat__msg{
+  align-self: flex-start;
+  height: 50px;
+}
+.this__user{
+  color: red;
+}
+.chat__msg.this__user{
+  color: red;
+  align-self: flex-end;
+}
+.msg__info,
+.msg__text{
+  font-family: 'Roboto', sans-serif;
+  margin:0;
+}
