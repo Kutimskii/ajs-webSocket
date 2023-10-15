@@ -13,7 +13,7 @@ export default class Chat {
   }
 
   registerEvents() {
-    this.ws = new WebSocket("ws://websocketbackend.onrender.com/ws");
+    this.ws = new WebSocket("wss://websocketbackend.onrender.com/ws");
     this.ws.addEventListener("open", (e) => {
       console.log(e);
       console.log("ws open");
